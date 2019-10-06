@@ -1,0 +1,8 @@
+/* Users Component's private CSS styles */
+:host {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+

@@ -1,0 +1,21 @@
+<div>
+        <h2>User Profile Edit</h2>
+        <div>
+          <label>First Name:
+            <input [(ngModel)]="userData.firstName" placeholder="First Name"/>
+          </label><br>
+          <label>Last Name:
+            <input [(ngModel)]="userData.lastName" placeholder="Last Name"/>
+          </label><br>
+          <label>Email:
+            <input [(ngModel)]="userData.email" placeholder="Email"/>
+          </label><br>
+          <label>Department:
+                <input [(ngModel)]="userData.department" placeholder="Department"/>
+              </label><br>
+            <label>Team:
+            <input [(ngModel)]="userData.team" placeholder="Team"/>
+            </label><br>
+        </div>
+        <button (click)="updateUser()">Update</button>
+      </div>

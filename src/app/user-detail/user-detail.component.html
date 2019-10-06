@@ -1,0 +1,15 @@
+<div *ngIf="userProfile" class="UserDetailComponent" style="animation-fill-mode: both">
+    <h2>{{displayName | uppercase}} Details</h2>
+    <div><span>First Name: </span>{{userProfile.firstName}}</div>
+    <div><span>Last Name: </span>{{userProfile.lastName}}</div>
+    <div><span>Display Name: </span>{{userProfile.displayName}}</div>
+    <div><span>Email: </span>{{userProfile.email}}</div>
+    <div><span>Meal Preference: </span>{{userProfile.description}}</div>
+    <div><span>Department: </span>{{userProfile.department}}</div>
+    <div><span>Team: </span>{{userProfile.team}}</div>
+    <div>
+      <button routerLink="/user-edit/{{userProfile.userId}}">
+        Edit
+      </button>
+    </div>
+  </div>

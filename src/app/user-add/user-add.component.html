@@ -1,0 +1,41 @@
+<div class="register-form">
+    <h4>Add new User Profile</h4>
+    <div class="form-group">
+        <label>First Name:
+          <input [(ngModel)]="userProfile.firstName" placeholder="First Name"/>
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Last Name:
+            <input [(ngModel)]="userProfile.lastName" placeholder="Last Name"/>
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Display Name:
+            <input [(ngModel)]="userProfile.displayName" placeholder="Display Name"/>
+          </label>
+    </div>
+    <div class="form-group">
+      <label>Email:
+          <input [(ngModel)]="userProfile.email" placeholder="Email"/>
+      </label>
+    </div>
+    <div class="form-group">
+      <label>Meal Preference Desc:
+             <input [(ngModel)]="userProfile.description" placeholder="Meal Preference"/>
+      </label>
+    </div>
+    <div class="form-group">
+        <label>Department:
+          <input [(ngModel)]="userProfile.department" placeholder="Department"/>
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Team:
+              <input [(ngModel)]="userProfile.team" placeholder="Team"/>
+            </label><br>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" (click)="addUser()">Save</button>
+    </div>
+  </div>    
